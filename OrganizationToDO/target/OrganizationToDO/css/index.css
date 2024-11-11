@@ -1,0 +1,314 @@
+@charset "UTF-8";
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+/* Navbar Styling */
+.header {
+    background-image: url('../images/back.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header-cotainer {
+    background-color: rgba(0, 0, 0, 0.685);
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    color: #fff;
+    position: relative;
+    z-index: 1000;
+}
+
+.header-nav .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+}
+
+.header-nav .nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.header-nav .nav-links li {
+    list-style: none;
+}
+
+.header-nav .nav-links a {
+    color: #f3f3f3;
+    text-decoration: none;
+    font-size: 1.2em;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.header-nav .nav-links a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: #f3f3f3;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.header-nav .nav-links a:hover {
+    color: #ffc107;
+}
+
+.header-nav .nav-links a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* section */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.container h1 {
+    color: white;
+}
+
+.container h2 {
+    color: white;
+}
+
+
+/* service section */
+.service-scection {
+    background: black;
+}
+
+.service-container {
+    background: black;
+
+}
+
+.service-container h1 {
+    padding: 10px;
+    text-align: center;
+    color: #44D62C;
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
+}
+
+.image-container {
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    padding-top: 50px;
+    display: flex;
+    gap: 9px;
+
+}
+
+/* animation */
+.image-container .animated-image {
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container .animated-image:hover {
+    transform: scale(1.1);
+}
+
+.service-img p {
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.service-btn {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.glow-on-hover {
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #2c2b2b;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* 
+about us */
+
+.about-us h1 {
+    text-align: center;
+    color: #44D62C;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.member-img {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.soumya-imge {
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 220px;
+}
+
+.soumya-imge img {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.soumya-imge h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.soumya-imge p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #ddd;
+}
+
+
+/* Basic styling for the icons container */
+.icons-1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Styling for the individual social icons */
+.social-icon {
+    font-size: 25px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    color: #ff5a5f;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon:hover i {
+    animation: glow 1.5s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff5a5f, 0 0 10px #ff5a5f, 0 0 15px #ff5a5f;
+    }
+
+    50% {
+        text-shadow: 0 0 20px #ff5a5f, 0 0 30px #ff5a5f, 0 0 40px #ff5a5f;
+    }
+
+    100% {
+        text-shadow: 0 0 5px #ff5a5f, 0 0 10px #ff5a5f, 0 0 15px #ff5a5f;
+    }
+}
+
+
+/* .soumya-imge:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.soumya-imge:hover img {
+    transform: scale(1.1);
+} */
+

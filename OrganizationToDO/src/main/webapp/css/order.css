@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* Body Styling */
+body {
+    background-color: #000000;
+    font-family: "Oswald", sans-serif;
+    padding-top: 10px;
+}
+
+/* Heading Styling */
+h2 {
+    color: #44D62C;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+#workForm {
+    background: rgb(78, 78, 78);
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Display Section Margin */
+#displaySection {
+    margin-top: 30px;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Title and Text Styling */
+.card-title {
+    color: #0d6efd;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Input Focus Styling */
+input:focus, textarea:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.3);
+}
+
+/* Animation for Fade-in Effect */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.4s ease-in-out;
+}
