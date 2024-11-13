@@ -85,7 +85,7 @@ CodeCraftStudio/
 
 ## Contributors
 
-**Srijon Ray** -- Frontend Developer
+**Srijon Ray** -- Frontend Developer <br>
 **Soumyadip Adak** -- Bcakend Developer
 
 ## License
