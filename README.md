@@ -85,14 +85,8 @@ CodeCraftStudio/
 
 ## Contributors
 
-<div style="display: flex; align-items: center; gap: 10px; padding-bottom: 15px;">
-    <img src="images/srijan.jpg" height="150px" width="150px" alt="Srijan Ray" style="border-radius: 50%;">
-    <span><strong>Srijan Ray</strong> - Frontend Developer</span>
-</div>
-<div style="display: flex; align-items: center; gap: 10px;">
-    <img src="images/soumyadip.jpg" height="150px" width="150px" alt="Soumyadip Adak" style="border-radius: 50%;">
-    <span><strong>Soumyadip Adak</strong> - Backend Developer</span>
-</div>
+**Srijon Ray** -- Frontend Developer
+**Soumyadip Adak** -- Bcakend Developer
 
 ## License
 
