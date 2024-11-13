@@ -1,7 +1,3 @@
-Here’s a refined, professional version of the README for **CodeCraft Studio**, enhancing clarity, consistency, and detail:
-
----
-
 # CodeCraft Studio
 
 Welcome to **CodeCraft Studio** – a premier portfolio website designed to showcase top-tier software development services. From advanced software solutions to UI/UX design and full-cycle website and mobile app development, CodeCraft Studio is crafted to elevate digital experiences and streamline the service ordering process for clients.
