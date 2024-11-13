@@ -92,7 +92,7 @@ CodeCraftStudio/
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE), allowing free use, modification, and distribution with attribution.
+This project is licensed under the [LICENCE.text](LICENSE), allowing free use, modification, and distribution with attribution.
 
 ---
 
