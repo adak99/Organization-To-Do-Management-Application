@@ -1,6 +1,6 @@
 # CodeCraft Studio
 
-Welcome to **CodeCraft Studio** — a professional portfolio website that showcases high-quality software development services. From resolving software issues to UI/UX design and full-scale website and mobile application development, CodeCraft Studio is built to elevate digital experiences and simplify service ordering for clients.
+Welcome to **CodeCraft Studio** – a professional portfolio website showcasing high-quality software development services, from software issue resolution to UI/UX design and full-scale website and mobile application development. CodeCraft Studio is designed to elevate digital experiences and streamline service ordering for clients.
 
 ## Table of Contents
 
@@ -11,32 +11,33 @@ Welcome to **CodeCraft Studio** — a professional portfolio website that showca
 5. [Project Structure](#project-structure)
 6. [Contributors](#contributors)
 7. [License](#license)
+8. [Future Enhancements](#future-enhancements)
 
 ---
 
 ## Project Overview
 
-**CodeCraft Studio** is designed to professionally present services related to software development. With clear service descriptions, user-friendly navigation, and an engaging "About Us" section, this website provides a complete view of what CodeCraft Studio offers. The project serves as a professional, accessible, and responsive web application with modern design aesthetics.
+**CodeCraft Studio** is a professional web application aimed at presenting a range of software development services in a polished, accessible, and responsive format. With comprehensive service descriptions, intuitive navigation, and an engaging "About Us" section, this website provides a complete view of what CodeCraft Studio offers, setting a high standard for both desktop and mobile experiences.
 
 ## Features
 
-- **Service Offerings**: Detailed service descriptions with visuals for each area of expertise.
-- **Order Now Button**: Quick access to the service ordering page.
-- **Team Section**: Introduction to team members, including their roles and social media links.
-- **Responsive Design**: Optimized for both desktop and mobile devices to ensure a seamless user experience.
+- **Service Offerings**: Detailed descriptions for each service area, with supporting visuals.
+- **Order Now Button**: Direct access to the service ordering page.
+- **Team Section**: Introduction to team members with roles and social media links.
+- **Responsive Design**: Optimized for both desktop and mobile devices, ensuring a seamless user experience.
 
 ## Technology Stack
 
-- **Frontend**: HTML5, CSS3, JSP
-- **Backend**: Java (using JSP integration)
-- **Icons**: FontAwesome (for social media and other icons)
-- **Frameworks**: Supports JSP server environments (e.g., Apache Tomcat)
+- **Frontend**: HTML5, CSS3, JavaScript, JSP
+- **Backend**: Java (JSP for dynamic content generation)
+- **Icons**: FontAwesome (for social media and feature icons)
+- **Server**: Apache Tomcat or any compatible Java servlet container
 
 ## Getting Started
 
 ### Prerequisites
 
-To get the CodeCraft Studio website up and running on your local machine, ensure you have the following:
+To run CodeCraft Studio locally, make sure you have the following:
 
 - Java Development Kit (JDK)
 - Apache Tomcat or another Java servlet container
@@ -48,13 +49,13 @@ To get the CodeCraft Studio website up and running on your local machine, ensure
    ```bash
    git clone https://github.com/yourusername/CodeCraftStudio.git
    ```
-2. **Open in your preferred IDE**:
-   Import the project into an IDE such as IntelliJ IDEA or Eclipse that supports JSP for smooth integration and editing.
+2. **Import into your IDE**:
+   Open the project in an IDE that supports JSP, such as IntelliJ IDEA or Eclipse, for smooth integration and editing.
 
 3. **Deploy on a server**:
-   Deploy the project to a servlet container like Apache Tomcat:
-   - Open your Tomcat manager
-   - Deploy the project files to see the site live locally
+   To view the site locally, deploy the project to a servlet container like Apache Tomcat:
+   - Open your Tomcat manager or add the project to your server in the IDE.
+   - Deploy the project files.
 
 4. **Access the Website**:
    After deployment, open a browser and navigate to `http://localhost:8080/CodeCraftStudio` to view the website.
@@ -66,36 +67,45 @@ The project directory is organized as follows:
 ```
 CodeCraftStudio/
 ├── README.md                # Project documentation
-├── index.html               # Main HTML file
+├── index.html               # Main HTML file for the homepage
 ├── css/
-│   └── index.css            # Main CSS styles for the site
+│   └── index.css            # Main CSS file for the site
 ├── images/
-│   ├── image1.png           # Sample images for services
-│   ├── ...
+│   ├── service1.png         # Images for service descriptions
+│   ├── soumyadip.jpg        # Contributor image
+│   ├── srijan.jpg           # Contributor image
+│   └── ...
 ├── allcomponents/
-│   ├── allcss.jsp           # CSS includes for common components
-│   └── footer.jsp           # Footer component
+│   ├── allcss.jsp           # JSP file for including shared CSS across components
+│   └── footer.jsp           # Footer component file
 ├── js/
-│   └── main.js              # Placeholder for JavaScript interactions
-└── order.jsp                # Order page
+│   └── main.js              # JavaScript file for site interactions
+└── order.jsp                # Service ordering page
 ```
 
 ## Contributors
 
-- **Soumyadip Adak** - Backend Developer
-- **Srijan Ray** - Frontend Developer
+<div style="display: flex; align-items: center; gap: 10px; padding-bottom: 15px;">
+    <img src="images/srijan.jpg" height="150px" width="150px" alt="Srijan Ray" style="border-radius: 50%;">
+    <span><strong>Srijan Ray</strong> - Frontend Developer</span>
+</div>
+<div style="display: flex; align-items: center; gap: 10px;">
+    <img src="images/soumyadip.jpg" height="150px" width="150px" alt="Soumyadip Adak" style="border-radius: 50%;">
+    <span><strong>Soumyadip Adak</strong> - Backend Developer</span>
+</div>
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for more information.
+This project is licensed under the MIT License. See the <a href="LICENSE.text">`LICENSE`</a> file for more details.
 
 ---
 
-### Additional Notes
+## Future Enhancements
 
-To extend the project, consider adding:
-- **JavaScript Animations**: For interactive user feedback on button clicks and section transitions.
-- **SEO Optimization**: Improve visibility with meta tags and SEO best practices.
-- **Responsive Breakpoints**: Ensure smooth viewing across different screen sizes.
+To further elevate CodeCraft Studio, consider implementing:
 
-Enjoy building with CodeCraft Studio!
+- **JavaScript Animations**: Add interactive feedback for button clicks, smooth scrolling, and section transitions.
+- **SEO Optimization**: Boost visibility with relevant meta tags and SEO best practices.
+- **Responsive Breakpoints**: Ensure optimal viewing across all screen sizes by fine-tuning breakpoints and testing on multiple devices.
+
+Thank you for choosing CodeCraft Studio. We hope you enjoy exploring and building upon this project!
